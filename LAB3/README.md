@@ -45,5 +45,10 @@
     sam4[order(sam4$diff, decreasing = TRUE), ]
     res<-filter(sam4,str_detect(src,"13.37.84.125",negate=TRUE)&str_detect(src,"13.48.72.30",negate=TRUE)) %>% head(1)
     res %>% select(src)
+
+## # A tibble: 1 × 1
+##   src         
+##   <chr>       
+## 1 14.49.44.92
   
 ### Ответ: 14.49.44.92
